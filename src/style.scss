@@ -1,0 +1,150 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.container{
+    width: 60vw;
+    margin: auto;
+
+    padding: 20px;
+
+    .chat{
+        border-radius: 16px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between  ;
+        align-items: center;
+         background: rgb(84, 109, 101);
+         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+         height: 90vh;
+
+
+
+         .chat-GPT{
+            border-radius: 8px 8px 0 0;
+            width: 100%;
+            background: white;
+            display: flex;
+            justify-content: flex-start;
+            height: 15vh;
+
+
+            .gpt-face{
+                
+                img{
+                    height: 100%;
+                }
+            }
+
+            .GPT-status{
+                padding-left: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                
+                .gpt-name{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                p{
+                    margin: 0;
+                    
+                }
+            }
+         }
+
+
+        .my-question{
+            align-self: flex-end;
+             width: fit-content;
+             background: rgb(255,255,255);
+             background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(45,253,62,1) 90%);
+            padding-right: 15px;
+            padding-left: 15px;            
+            border-radius: 16px 0 0 16px; 
+
+             .my-question-text{
+                text-align: end;
+             }
+
+
+        }
+
+        .answer-box{
+
+            padding-top: 15px;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 80vh;
+            width: 100%;
+            border-radius: 0 0 16px 16px;
+            background-image: url(data:image/jpeg;base64,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);
+            background-repeat: no-repeat;
+            background-size: cover;
+            .answer{
+                align-self: flex-start;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                color: black;
+                border-radius: 0 16px 16px 0;
+                width: fit-content;
+                display: flex;
+                flex-wrap: nowrap;
+                background: rgb(255,255,255);
+                background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(253,223,45,1) 90%);
+
+
+                .answer-text{
+                    width: fit-content;
+                    font-size: 18px;
+                    
+                flex-grow: 1;
+
+                }
+
+                .answer-img{
+                flex-grow: 1;
+                    max-width: 20vh;
+                    max-height: 20vh;
+                }
+
+            }
+
+        }
+
+        .asking-box{
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+
+            #inp-quest{
+                width: 100%;
+                border: none;
+                border-radius: 16px 0 0 16px;
+                padding-left: 10px;
+                font-size: 22px;
+            }
+            #toask{
+                padding: 20px;
+                cursor: pointer;
+                border: 1px solid white;
+            }
+            #lastquest{
+                padding: 20px;
+                cursor: pointer;
+                border: none;
+                border-radius: 0 16px 16px 0;
+            }
+        }
+    }
+
+
+}
